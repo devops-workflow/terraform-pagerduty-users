@@ -1,6 +1,7 @@
 # pagerduty-users module
 
 ## Description
+
 This TF module allows the declaration of all PagerDuty users in an account. It does _not_ support teams and thus can be used with any PagerDuty account.
 
 ## Variables
