@@ -1,4 +1,9 @@
-# This is where variables to be autoloaded by Terraform go
+
+variable "enabled" {
+  description = "Set to false to prevent the module from creating anything"
+  default     = true
+}
+
 variable "pagerduty_token" {
   type        = "string"
   description = "The API token for PagerDuty. Should be set via an environment variable."
