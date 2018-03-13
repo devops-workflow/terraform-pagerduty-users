@@ -1,4 +1,6 @@
-# pagerduty-users module
+[![CircleCI](https://circleci.com/gh/devops-workflow/terraform-pagerduty-users.svg?style=svg)](https://circleci.com/gh/devops-workflow/terraform-pagerduty-users)
+
+# terraform-pagerduty-users
 
 ## Description
 
