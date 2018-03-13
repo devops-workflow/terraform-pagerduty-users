@@ -1,17 +1,16 @@
-
 variable "enabled" {
   description = "Set to false to prevent the module from creating anything"
   default     = true
 }
 
 variable "pagerduty_token" {
-  type        = "string"
   description = "The API token for PagerDuty. Should be set via an environment variable."
+  type        = "string"
 }
 
 variable "users" {
-  type        = "list"
   description = "A list of maps containing information about PagerDuty users. Please see the variable declaration for an example of the structure."
+  type        = "list"
 
   default = [
     {

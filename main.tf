@@ -1,4 +1,3 @@
-
 # https://www.terraform.io/docs/providers/pagerduty/r/user.html
 
 module "enabled" {
@@ -14,6 +13,7 @@ resource "pagerduty_user" "this" {
   color     = "${lookup(var.users[count.index], "color", "")}"
   role      = "${lookup(var.users[count.index], "role", "")}"
   job_title = "${lookup(var.users[count.index], "job_title", "")}"
-  #team     =
-  #description =
+
+  #teams     =
+  #description = , "Managed by Terraform"
 }
