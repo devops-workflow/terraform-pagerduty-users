@@ -6,6 +6,26 @@
 
 This TF module allows the declaration of all PagerDuty users in an account. It does _not_ support teams and thus can be used with any PagerDuty account.
 
+### Usage
+```hcl
+module "users" {
+  source          = "devops-workflow/users/pagerduty"
+  version         = "0.2.0"
+  pagerduty_token = "${var.pagerduty_token}"
+
+  users = [
+    {
+      name        = "Test User 2"
+      email       = "user2@example.com"
+      color       = "red"
+      description = "Test user"
+      job_title   = "Developer 2"
+      role        = "team_responder"
+    },
+  ]
+}
+```
+
 ## Variables
 
 ### pagerduty_token
@@ -18,20 +38,8 @@ This TF module allows the declaration of all PagerDuty users in an account. It d
 
 ### users
 
-**Description:** A list of maps representing users. The format of the maps is contained below.
+**Description:** A list of maps representing users. See usage or examples. name and email are required
 
 **Acceptable Values:** A list of maps.
 
-**Default Value:**
-
-```hcl
-[
-  {
-    name      = "Full name"             # Required
-    email     = "user@contoso.com"      # Required
-    color     = "Blue"                  # Optional
-    role      = "read_only_user"        # Optional, See documentation
-    job_title = "Chief Needful Officer" # Optional
-  },
-]
-```
+**Default Value:** `N/A`
