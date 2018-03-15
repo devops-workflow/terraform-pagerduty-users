@@ -30,7 +30,7 @@ This TF module allows the declaration of all PagerDuty users in an account. It d
     name      = "Full name"             # Required
     email     = "user@contoso.com"      # Required
     color     = "Blue"                  # Optional
-    role      = "read_only_user"        # Optional, see docs
+    role      = "read_only_user"        # Optional, See documentation
     job_title = "Chief Needful Officer" # Optional
   },
 ]
